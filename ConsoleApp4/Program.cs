@@ -17,7 +17,7 @@ namespace ConsoleApp4
 
             // Write name only.
 
-            Console.Write("Write your name ");
+            Console.Write("Write your name: ");
             EUR = Convert.ToString(Console.ReadLine());
             Console.WriteLine(EUR.ToString());
             Console.ReadLine();
