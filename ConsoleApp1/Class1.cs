@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
 
             int Number1, Number2, Sum;
@@ -22,7 +22,7 @@ namespace ConsoleApp1
             Console.Write("Give Number2: ");
             Number2 = Convert.ToInt16(Console.ReadLine());
 
-            Sum = Number1 / Number2;
+            Sum = Number1 + Number2;
 
             Console.WriteLine("De sum is " + Sum.ToString());
             Console.ReadLine();
