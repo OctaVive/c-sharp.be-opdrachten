@@ -12,6 +12,23 @@ namespace ConsoleApp4
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
+
+            string EUR;
+
+            // Write name only.
+
+            Console.Write("Write your name ");
+            EUR = Convert.ToString(Console.ReadLine());
+            Console.WriteLine(EUR.ToString());
+            Console.ReadLine();
+
+            // Write a full sentence.
+
+            Console.WriteLine("Your name is " + EUR.ToString());
+            Console.ReadLine();
+
+
+
         }
     }
 }
