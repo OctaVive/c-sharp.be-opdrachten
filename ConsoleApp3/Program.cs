@@ -14,7 +14,7 @@ namespace ConsoleApp3
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
 
-            // Ints
+            // Double
             Double EUR;
             Double USD;
             Double COURSE;
@@ -29,11 +29,15 @@ namespace ConsoleApp3
 
             // Round up numbers
 
-            var RoundedCOURSE = Math.Round(COURSE, 2);
-            var RoundedEUR = Math.Round(EUR, 2);
-            var RoundedUSD = Math.Round(USD, 2);
+            int RoundUp;
+            RoundUp = 2;
+
+            var RoundedCOURSE = Math.Round(COURSE, RoundUp);
+            var RoundedEUR = Math.Round(EUR, RoundUp);
+            var RoundedUSD = Math.Round(USD, RoundUp);
 
             // Give answer
+
             Console.WriteLine(RoundedEUR + " EUR is equal to " + RoundedUSD + " USD");
             Console.ReadLine();
             Console.WriteLine("Please press any key to continue");

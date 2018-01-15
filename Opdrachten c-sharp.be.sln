@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EURO naar USD", "ConsoleApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp4", "ConsoleApp4\ConsoleApp4.csproj", "{F22E1717-293C-4671-A724-B72536A7A4B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receipt C-sharp version", "Receipt C-sharp version\Receipt C-sharp version.csproj", "{BA086048-148C-459E-8702-6736230EE2A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F22E1717-293C-4671-A724-B72536A7A4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F22E1717-293C-4671-A724-B72536A7A4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F22E1717-293C-4671-A724-B72536A7A4B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA086048-148C-459E-8702-6736230EE2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA086048-148C-459E-8702-6736230EE2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA086048-148C-459E-8702-6736230EE2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA086048-148C-459E-8702-6736230EE2A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
