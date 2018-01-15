@@ -30,7 +30,7 @@ namespace ConsoleApp3
             // Round up numbers
 
             int RoundUp;
-            RoundUp = 2;
+            RoundUp = 2; // Change to amount of decimals you want it to round up to.
 
             var RoundedCOURSE = Math.Round(COURSE, RoundUp);
             var RoundedEUR = Math.Round(EUR, RoundUp);
