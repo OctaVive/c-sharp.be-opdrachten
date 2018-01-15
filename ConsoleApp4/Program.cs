@@ -24,8 +24,9 @@ namespace ConsoleApp4
 
             // Write a full sentence.
 
-            Console.WriteLine("Your name is " + EUR.ToString());
+            Console.WriteLine("Hello " + EUR.ToString());
             Console.ReadLine();
+
 
 
 

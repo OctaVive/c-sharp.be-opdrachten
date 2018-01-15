@@ -18,19 +18,28 @@ namespace ConsoleApp3
             Double EUR;
             Double USD;
             Double COURSE;
-        
 
             // Input amount of EUR
             Console.Write("Give amount of EUR to convert: ");
-            EUR = Convert.ToInt16(Console.ReadLine());
+            EUR = Convert.ToDouble(Console.ReadLine());
 
             // Calculation of USD
             COURSE = 1.2231;
             USD = EUR * COURSE;
 
+            // Round up numbers
+
+            var RoundedCOURSE = Math.Round(COURSE, 2);
+            var RoundedEUR = Math.Round(EUR, 2);
+            var RoundedUSD = Math.Round(USD, 2);
+
             // Give answer
-            Console.WriteLine(EUR.ToString("n2") + " EUR is equal to " + USD.ToString("n2") + " USD");
+            Console.WriteLine(RoundedEUR + " EUR is equal to " + RoundedUSD + " USD");
             Console.ReadLine();
+            Console.WriteLine("Please press any key to continue");
+            Console.Write(DateTime.Now);
+            Console.ReadLine();
+           
 
         }
     }
