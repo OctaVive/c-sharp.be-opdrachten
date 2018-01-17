@@ -135,25 +135,6 @@ namespace Receipt_C_sharp_version
 
 
 
-
-        
-
-                 
-                
-
-           
-
-            
-
-            
-                   
-
-
-                
-           
-
-
-     
      
 
 
