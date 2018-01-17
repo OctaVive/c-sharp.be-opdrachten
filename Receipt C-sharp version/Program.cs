@@ -23,52 +23,120 @@ namespace Receipt_C_sharp_version
             Console.Write(Name);
             Console.Clear();
 
-           
+           // Choices of food
 
             Console.WriteLine("Make your choice: ");
             Console.WriteLine("1. Pizza");
             Console.WriteLine("2. Spaghetti");
             Console.WriteLine("3. Salad");
-            string str = Console.ReadLine();
+            int choice = Convert.ToInt16(Console.ReadLine());
 
-            
-            Double Pizza, Spaghetti, Salad, cost;
+            // Prices of food
 
-            
+            Double Pizza = 9.00;
+            Double Spaghetti = 8.50;
+            Double Salad = 4.50;
 
-            // Prices
-            Pizza = 9.00;
-            Spaghetti = 8.50;
-            Salad = 4.50;
-            
-
-
+            // Menu
 
             Double foodprice;
+            string print_food;
 
-            switch (str)
+            switch (choice)
             {
                 case 1:
-                case 
+                    foodprice = Pizza;
+                    print_food = "Pizza";
                     break;
 
                 case 2:
                     foodprice = Spaghetti;
+                    print_food = "Spaghetti";
                     break;
 
                 case 3:
                     foodprice = Salad;
+                    print_food = "Salad";
                     break;
+
+                default:
+                    throw new Exception("Invalid Choice");
+             
+
 
 
             }
 
+            Console.Clear();
 
-            Console.Write(foodprice + "Hello");
+            // Choices of drinks
+
+            Console.WriteLine("What drink would you like?");
+            Console.WriteLine("1. Beer");
+            Console.WriteLine("2. Coke");
+            Console.WriteLine("3. Ice Tea");
+            int choice2 = Convert.ToInt16(Console.ReadLine());
+
+            // Prices of drinks
+
+            Double Beer = 3.00;
+            Double Coke = 1.80;
+            Double IceTea = 1.60;
+
+            // Menu
+
+            Double drinkprice;
+            string print_drink;
+
+            switch(choice2)
+            {
+                case 1:
+                    drinkprice = Beer;
+                    print_drink = "Beer";
+                    break;
+
+                case 2:
+                    drinkprice = Coke;
+                    print_drink = "Coke";
+                    break;
+
+                case 3:
+                    drinkprice = IceTea;
+                    print_drink = "Ice Tea";
+                    break;
+
+                default:
+                    throw new Exception("Invalid Choice");
+            }
+
+            Console.Clear();
+
+            // Calculations
+
+            Double tax = 0.06;
+            Double total;
+            Double tax_percent = tax + 1;
+
+            total = (foodprice * tax_percent) + (drinkprice * tax_percent);
+
+            var roundfood = Math.Round(foodprice, 2);
+            var rounddrink = Math.Round(drinkprice, 2);
+            var totalprice = Math.Round(total, 2);
+
+            // Printing all stuff out
+
+            Console.WriteLine("DATE = " + DateTime.Now);
+            Console.WriteLine("NAME = " + Name);
+            Console.WriteLine("FOOD (ex VAT) = " + print_food + " " + "$" + roundfood);
+            Console.WriteLine("DRINK (ex VAT) = " + print_drink + " " + "$" + rounddrink);
+            Console.WriteLine("TAX = " + tax + "%");
+            Console.WriteLine("PRICE = " + "$" + totalprice);
+            Console.Read();
 
 
 
-                
+
+        
 
                  
                 
