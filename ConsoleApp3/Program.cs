@@ -30,14 +30,21 @@ namespace ConsoleApp3
             // Round up numbers
 
             int RoundUp;
-            RoundUp = 2; // Change to amount of decimals you want it to round up to.
+
+            Console.W
+
+            // Give input of decimals
 
             var RoundedCOURSE = Math.Round(COURSE, RoundUp);
             var RoundedEUR = Math.Round(EUR, RoundUp);
             var RoundedUSD = Math.Round(USD, RoundUp);
 
+
+            
+
             // Give answer
 
+            
             Console.WriteLine(RoundedEUR + " EUR is equal to " + RoundedUSD + " USD");
             Console.ReadLine();
             Console.WriteLine("Please press any key to continue");

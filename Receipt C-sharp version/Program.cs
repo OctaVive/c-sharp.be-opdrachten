@@ -33,9 +33,9 @@ namespace Receipt_C_sharp_version
 
             // Prices of food
 
-            Double Pizza = 9.00;
-            Double Spaghetti = 8.50;
-            Double Salad = 4.50;
+            Double Pizza = 9.01;
+            Double Spaghetti = 8.51;
+            Double Salad = 4.51;
 
             // Menu
 
@@ -79,9 +79,9 @@ namespace Receipt_C_sharp_version
 
             // Prices of drinks
 
-            Double Beer = 3.00;
-            Double Coke = 1.80;
-            Double IceTea = 1.60;
+            Double Beer = 3.01;
+            Double Coke = 1.81;
+            Double IceTea = 1.61;
 
             // Menu
 
@@ -113,7 +113,7 @@ namespace Receipt_C_sharp_version
 
             // Calculations
 
-            Double tax = 0.06;
+            Double tax = 0.09;
             Double total;
             Double tax_percent = tax + 1;
 
