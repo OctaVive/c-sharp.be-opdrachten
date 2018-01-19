@@ -60,7 +60,7 @@ namespace Receipt_C_sharp_version
                     break;
 
                 default:
-                    throw new Exception("Invalid Choice");
+                    throw new Exception("Invalid Choice"); 
              
 
 
@@ -87,6 +87,7 @@ namespace Receipt_C_sharp_version
 
             Double drinkprice;
             string print_drink;
+            
 
             switch(choice2)
             {
@@ -106,7 +107,7 @@ namespace Receipt_C_sharp_version
                     break;
 
                 default:
-                    throw new Exception("Invalid Choice");
+                    throw new Exception ("Invalid Choice");
             }
 
             Console.Clear();
