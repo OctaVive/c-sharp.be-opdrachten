@@ -9,7 +9,7 @@ namespace Receipt_C_sharp_version
     class Program
     {
         static void Main(string[] args)
-        {
+         {
 
             // Background color of console
             
