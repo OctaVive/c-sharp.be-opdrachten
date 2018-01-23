@@ -132,6 +132,7 @@ namespace Receipt_C_sharp_version
             Console.WriteLine("DRINK (ex VAT) = " + print_drink + " " + "$" + rounddrink);
             Console.WriteLine("TAX = " + tax + "%");
             Console.WriteLine("PRICE = " + "$" + totalprice);
+            Console.WriteLine("Have a nice day!");
             Console.Read();
 
 
