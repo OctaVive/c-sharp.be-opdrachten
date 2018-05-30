@@ -37,9 +37,9 @@ namespace Jokes
          
             Random rnd = new Random();
             int jk = rnd.Next(lower, upper + 1);
-            
-            
-            
+
+
+            bool keepTellingJokes = true;
 
             if (Age >= 16)
             {
@@ -49,33 +49,28 @@ namespace Jokes
 
                 if (option == "yes")
                 {
-                    Console.WriteLine(jokes[jk]);
-                    Console.Read();
-
-                    Console.WriteLine("Do you want to hear another joke?");
-                    string option2 = Console.ReadLine();
-
-                    int i;
-
-                    if (option2 == "yes")
-                    {
-                        i = 0;
-                    }
-                    
-
-
-                    else
-                    {
-                        i = 1;
-                    }
-
-                    do
+                    while (keepTellingJokes)
                     {
                         Console.WriteLine(jokes[jk]);
                         Console.Read();
-                    } while (i == 0);
+
+                        Console.WriteLine("Do you want to hear another joke?");
+                        Console.Read();
+                        string option2 = Console.ReadLine();
+
+                        if (option2 == "no")
+                        {
+                            keepTellingJokes = false;
+                            Console.WriteLine("Have a nice day, " + Name);
+                            Console.Read();
+                        }
+
+                    }
 
                 }
+
+                  
+               
 
                 else
                 {
