@@ -34,10 +34,6 @@ namespace Jokes
             int upper = jokes.GetUpperBound(0);
             int lower = jokes.GetLowerBound(0);
 
-         
-            Random rnd = new Random();
-            int jk = rnd.Next(lower, upper + 1);
-
 
             bool keepTellingJokes = true;
 
@@ -51,6 +47,9 @@ namespace Jokes
                 {
                     while (keepTellingJokes)
                     {
+                        Random rnd = new Random();
+                        int jk = rnd.Next(lower, upper + 1);
+
                         Console.WriteLine(jokes[jk]);
                         Console.Read();
 
@@ -68,9 +67,6 @@ namespace Jokes
                     }
 
                 }
-
-                  
-               
 
                 else
                 {
