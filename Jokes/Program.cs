@@ -27,7 +27,6 @@ namespace Jokes
             Console.Write(Age);
             Console.Clear();
 
-           
 
 
             string[] jokes = new string[] { "you", "your life", "your future", "your face", "your existence" };
