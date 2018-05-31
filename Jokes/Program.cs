@@ -30,7 +30,7 @@ namespace Jokes
            
 
 
-            string[] jokes = new string[] { "Joke1", "Joke2", "Joke3", "Joke4" };
+            string[] jokes = new string[] { "you", "your life", "your future", "your face", "your existence" };
             int upper = jokes.GetUpperBound(0);
             int lower = jokes.GetLowerBound(0);
 
@@ -49,10 +49,11 @@ namespace Jokes
                     {
                         Random rnd = new Random();
                         int jk = rnd.Next(lower, upper + 1);
-
+                        Console.Clear();
                         Console.WriteLine(jokes[jk]);
                         Console.Read();
 
+                        Console.Clear();
                         Console.WriteLine("Do you want to hear another joke?");
                         Console.Read();
                         string option2 = Console.ReadLine();
@@ -60,6 +61,7 @@ namespace Jokes
                         if (option2 == "no")
                         {
                             keepTellingJokes = false;
+                            Console.Clear();
                             Console.WriteLine("Have a nice day, " + Name);
                             Console.Read();
                         }
