@@ -38,7 +38,7 @@ namespace Jokes
 
             if (Age >= 16)
             {
-                Console.WriteLine("Do you want to hear a joke?");
+                Console.WriteLine("Do you want to hear a joke? (yes/no)");
 
                 string option = Console.ReadLine();
 
@@ -53,7 +53,7 @@ namespace Jokes
                         Console.Read();
 
                         Console.Clear();
-                        Console.WriteLine("Do you want to hear another joke?");
+                        Console.WriteLine("Do you want to hear another joke? (yes/no)");
                         Console.Read();
                         string option2 = Console.ReadLine();
 
