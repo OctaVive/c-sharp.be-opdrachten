@@ -1,2 +1,3 @@
-# c-sharp.be-opdrachten
-Opdrachten voor c-sharp.be voor studiedoeleinden.
+# c-sharp.be opdrachten
+
+Voor studiedoeleinden.
