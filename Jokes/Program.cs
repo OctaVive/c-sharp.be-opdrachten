@@ -26,7 +26,7 @@ namespace Jokes
             int Age = Convert.ToInt16(Console.ReadLine());
             Console.Write(Age);
             Console.Clear();
-
+            
 
 
             string[] jokes = new string[] { "you", "your life", "your future", "your face", "your existence" };

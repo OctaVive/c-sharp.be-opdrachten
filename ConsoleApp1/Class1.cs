@@ -28,6 +28,8 @@ namespace ConsoleApp1
 
             Console.WriteLine("De sum is " + Sum.ToString());
             Console.ReadLine();
+            Console.WriteLine("Hi");
+            Console.Read();
 
         }
     }
